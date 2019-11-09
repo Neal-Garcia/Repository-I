@@ -1,0 +1,9 @@
+def squaresum(n):
+    c=1
+    k=0
+    while c<n+1:
+        y=c**2+k
+        c+=1
+        k=y
+        if c==n+1:
+            print(y)
