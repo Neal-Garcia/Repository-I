@@ -1,0 +1,15 @@
+def getAvailableLetters(lettersGuessed):
+    comp="abcdefghijklmnopqrstuvwxyz"
+    ctr=0
+    for x in lettersGuessed:
+        y = x in str(comp)
+        
+        if y == True:
+            comp=str(comp.replace(lettersGuessed[ctr],""))
+            ctr=ctr+1
+            if ctr == len(lettersGuessed):
+                print(comp)
+        else:
+            ctr=ctr+1   
+            if ctr == len(lettersGuessed):
+                print(comp)
