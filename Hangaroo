@@ -1,0 +1,22 @@
+def Hangaroo(secretWord):
+    lettersGuessed = ['']
+    life = 3
+    while life > 0:
+        if isWordGuessed(secretWord,lettersGuessed):
+            return print("Correct!")
+        print("You have "+str(life)+"lives.")
+        print("Available letters:"+ getAvailableLetters(lettersGuessed))
+        tr = input("Guess The Word:")
+        tr = str(tr)
+        if tr not in lettersGuessed:
+            lettersGuessed.append(tr)
+            
+            if tr in secretWord:
+                print("Correct"+getGuessedWord(secretWord,lettersGuessed))
+            else:
+                print("Incorrect"+getGuessedWord(secretWord,lettersGuessed))
+                life = int(life)-1
+        else:
+            print("Cannot repeat!"+getGuessedWord(secretWord,lettersGuessed))
+    return 
+        print("Game Over!")  
