@@ -1,0 +1,17 @@
+def getGuessedWord(secretWord,lettersGuessed):
+    ctr=0
+    v = secretWord
+    for x in str(secretWord):
+        y = x in lettersGuessed
+       
+        if y == False:
+            
+            v=str(v.replace(secretWord[ctr],"_"))
+           
+            ctr=ctr+1
+            if ctr == len(v):
+                print(v)
+        else:
+            ctr=ctr+1
+            if ctr == len(v):
+                print(v)
