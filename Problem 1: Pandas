@@ -2,6 +2,8 @@ import pandas as pd
 data = pd.read_csv(r'C:\Users\User\Desktop\cars.csv')
 cars = pd.DataFrame(data,columns=['Model','mpg','cyl','disp','hp','drat','wt','qsec','vs','am','gear','carb'])
 
-cars.iloc[[0,1,2,3,4,-5,-4,-3,-2,-1]]
+print(cars)
 
-cars.iloc[[0,1,2,3,4],[1,3,5,7,9,11]]
+b=cars.iloc[[0,1,2,3,4,-5,-4,-3,-2,-1]]
+
+print(b)
