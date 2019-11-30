@@ -1,0 +1,13 @@
+y = input('Enter Initial Height: ');
+v = input('Enter Initial Velocity: ');
+th = input('Enter Initial Angle: ');
+ax = input('Enter Acceleration in X: ');
+ay = input('Enter Acceleration in Y: ');
+
+q = (v*sind(th))/(-1*ay) + sqrt(((v*sind(th))^2/(ay)^2)+(2*y/-1*ay));
+
+t = [0:0.01:q];
+xm = (v*cosd(th)).*t + 0.5*(ax).*t.^2;
+ym = y + (v*sind(th)).*t + 0.5*(ay).*t.^2;
+
+plot(xm,ym)
