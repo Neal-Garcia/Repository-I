@@ -1,4 +1,3 @@
-#PROBLEM1
 n = 0:99
 for k=1:100
     if n(k)<9
