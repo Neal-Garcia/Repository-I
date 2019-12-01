@@ -10,4 +10,8 @@ t = [0:0.01:q];
 xm = (v*cosd(th)).*t + 0.5*(ax).*t.^2;
 ym = y + (v*sind(th)).*t + 0.5*(ay).*t.^2;
 
-plot(xm,ym)
+if ay == 0
+    error('Vertical Acceleration cannot be 0!')
+else
+    plot(xm,ym)
+end
