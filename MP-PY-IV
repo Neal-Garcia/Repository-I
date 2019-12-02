@@ -21,8 +21,7 @@ else:
     q = (v*math.sin(math.radians(th)))/(-1*ay) + math.sqrt(((v*math.sin(math.radians(th)))**2/(ay)**2)+(2*y/-1*ay));
 
     t = np.arange(0,q,0.01)
-#t = [0:0.01:q];
-
+    
     c = 0
     xp = np.array([])
     yp = np.array([])
