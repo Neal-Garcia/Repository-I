@@ -5,7 +5,7 @@ c = 0
 y = np.array([])
 while (c < 100):
   
-    if (c<9):
+    if (c<10):
         z = (c*c)-7
         y = np.insert(y,c,z)
         c = c + 1
