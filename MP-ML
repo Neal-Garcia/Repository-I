@@ -1,6 +1,6 @@
 n = 0:99
 for k=1:100
-    if n(k)<9
+    if n(k)<=9
         f(k)=n(k)*n(k)-7
     elseif n(k)>=10
         f(k)=(n(k)-10)^2-7
