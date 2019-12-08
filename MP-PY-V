@@ -5,10 +5,11 @@ n = np.arange(0,200);
 sin = np.sin
 cos = np.cos
 tan = np.tan
+pi = np.pi
 x = input('Input: ')
 x = eval(x)
 ys = np.array([])
-pi = math.pi
+
 
 ctr = 0
 for k in n:
