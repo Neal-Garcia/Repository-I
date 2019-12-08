@@ -17,9 +17,7 @@ ay = float(ay)
 if ay == 0:
     print('Vertical Acceleration Cannot be 0!')
 else:
-
-    q = (v*math.sin(math.radians(th)))/(-1*ay) + math.sqrt(((v*math.sin(math.radians(th)))**2/(ay)**2)+(2*y/-1*ay));
-
+    q = ((2*v*math.sin(math.radians(th)))/(-1*ay)) + (y/(v*math.sin(math.radians(th))))
     t = np.arange(0,q,0.01)
     
     c = 0
